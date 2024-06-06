@@ -26,7 +26,11 @@
       height: 300px;;
     }
 
-    
+    .scroll-section {
+      background-color: green; /* Cambia el color de fondo aquí */
+      padding: 50px 20px;
+      margin-top: 40vh; /* Hace que la sección no sea visible hasta que se haga scroll */
+    }
     
   </style>
 </head>
@@ -71,7 +75,13 @@
     </div>
   </div>
 
-
+<!-- Nueva sección que aparece al hacer scroll -->
+<div class="scroll-section">
+  <div class="container">
+    <h2 class="text-3xl font-semibold mb-4">Sección Adicional</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquet, nunc non faucibus auctor, urna quam pretium orci, eu efficitur arcu risus nec lacus. Praesent sed diam sit amet felis sollicitudin luctus. Fusce non magna enim. Nam cursus purus in nibh viverra, at dapibus dui consequat.</p>
+  </div>
+</div>
 
   <footer class="bg-body-tertiary">
     <nav class="navbar fixed-bottom">
