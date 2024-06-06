@@ -26,10 +26,18 @@
       height: 300px;;
     }
 
+    html{
+      scroll-behavior: smooth;
+    }
+
     .scroll-section {
-      background-color: green; /* Cambia el color de fondo aquí */
-      padding: 10px 10px;
-      margin-top: 100vh; /* Hace que la sección no sea visible hasta que se haga scroll */
+       /* Cambia el color de fondo aquí */
+      padding: 60px 20px;
+      margin-top: 80vh; /* Hace que la sección no sea visible hasta que se haga scroll */
+    }
+
+    footer{
+      background-color: blue;
     }
     
   </style>
@@ -47,7 +55,7 @@
   </nav>
   <!-- aqui empieza el contenido de la web -->
   <div class="container mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-28">
       <!-- lado izquierdo -->
       <div>
         <h1 class="text-4xl font-ligth mb-3 leading-10"> BIENVENIDOS AL <strong>SISTEMA <br>  ADMINISTRATIVO DE CONTROL <br> MARÍTIMO,</strong> ARD
@@ -76,17 +84,83 @@
   </div>
 
 <!-- Nueva sección que aparece al hacer scroll -->
-<div class="scroll-section">
+
+<div class="scroll-section bg-blue-900">
   <div class="container">
-    <h2 class="text-3xl font-semibold mb-4">Sección Adicional</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquet, nunc non faucibus auctor, urna quam pretium orci, eu efficitur arcu risus nec lacus. Praesent sed diam sit amet felis sollicitudin luctus. Fusce non magna enim. Nam cursus purus in nibh viverra, at dapibus dui consequat.</p>
+
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-28">
+        <!-- lado izquierdo -->
+        <div class="flex justify-center items-center">
+          
+          <div class="">
+            <img class="rounded-full left" src="/img/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg" alt="Imagen de un barco">
+          </div>
+
+        </div>
+  
+       <!-- fin del lado izquierdo -->
+  
+        <!-- lado derecho -->
+        <div class="flex justify-center items-center">
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, sem et molestie aliquet, lacus nunc ultrices tellus, quis aliquet massa nisi in ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum tempor arcu ligula, vel faucibus orci malesuada vestibulum.
+          </p>
+
+
+        </div>
+        <!-- fin del lado derecho del landing -->
+      </div>
+    </div>
+
+
   </div>
+
+  <!-- fin de la section todo debe venir  -->
+
+
+<!-- segunda parte de la section  -->
+
+<div class="container">
+
+  <div class="container mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-28">
+      <!-- lado izquierdo -->
+      <div class="flex justify-center items-center">
+        
+        <p class="text-white">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies, sem et molestie aliquet, lacus nunc ultrices tellus, quis aliquet massa nisi in ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum tempor arcu ligula, vel faucibus orci malesuada vestibulum.
+        </p>
+
+
+      </div>
+
+     <!-- fin del lado izquierdo -->
+
+      <!-- lado derecho -->
+      <div class="flex justify-center items-center">
+        
+<div class="">
+          <img class="rounded-full left" src="/img/RMS_Queen_Elizabeth_2_in_Trondheim_2008.jpg" alt="Imagen de un barco">
+        </div>
+      </div>
+      <!-- fin del lado derecho del landing -->
+    </div>
+  </div>
+
+
 </div>
 
-  <footer class="bg-body-tertiary">
-    <nav class="navbar fixed-bottom">
+</div>
+
+
+
+
+
+  <footer class="">
+    <nav class="navbar fixed-bottom bg-blue-900">
       <div class="container d-flex justify-content-center">
-        <p class="text-center font-thin mb-0">© 2024 SDCM - Comando Naval de Capitanias de Puerto y Autoridad Maritima (CDP)</p>
+        <p class="text-center text-white font-thin mb-0">© 2024 SDCM - Comando Naval de Capitanias de Puerto y Autoridad Maritima (CDP)</p>
       </div>
     </nav>
   </footer>
