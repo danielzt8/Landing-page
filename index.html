@@ -9,6 +9,8 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+
   <script>
     tailwind.config = {
       theme: {
@@ -41,30 +43,122 @@
       background-color: blue;
     }
     
+    .carousel-item {
+      position: relative;
+    }
+    .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #F3E9E7;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
   </style>
 </head>
 
 <body>
   <!-- navbar -->
   <nav class="navbar bg-slate-100">
-    <div class="container-fluid d-flex justify-content-between">
-      <a class="navbar-brand" href="#">
-        <img src="img/capitania_web2 (1).png" alt="Logo" width="300" height="24" class="d-inline-block align-text-top">
-      </a>
-      <div class="d-flex align-items-center">
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Selecciona el idioma</option>
-          <option value="1">Inglés</option>
-          <option value="2">Español</option>
-          <option value="3">Francés</option>
-          <option value="4">Ruso</option>
-          <option value="5">Aleman</option>
-        </select>
-      </div>
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <img src="/img/logo-1-1.png" alt="Logo 1" class="me-2">
+            <a class="navbar-brand" href="#">
+                <img src="img/capitania_web2 (1).png" alt="Logo" width="300" height="24" class="d-inline-block align-text-top">
+            </a>
+        </div>
+        <div class="d-flex align-items-center">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Selecciona el idioma</option>
+                <option value="1">Inglés</option>
+                <option value="2">Español</option>
+                <option value="3">Francés</option>
+                <option value="4">Ruso</option>
+                <option value="5">Alemán</option>
+            </select>
+        </div>
     </div>
-  </nav>
+</nav>
   
   <!-- aqui empieza el contenido de la web -->
+<div class="container-fluid">
+
+
+<div id="indicators-carousel" class="relative w-full" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+       <!-- Item 1 -->
+       <div class="carousel-item active">
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="absolute block w-full -translate-x-1/2 -translate-y-1/4 top-1/2 left-1/2 brightness-50" alt="...">
+          <div class="carousel-caption mt-16 ">
+            <h1 class="text-4xl font-bold mb-1 shadow-2xl animate__animated animate__backInDown animate__delay-1s ">Bienvenidos</h1>
+            <p class="text-2xl shadow-2xl font-bold animate__animated animate__backInDown animate__delay-2s">AL SISTEMA
+              DE CONDUCE, ARRIBO Y DESPACHO DE EMBARCACIONES</p>
+          </div>
+        </div>
+      </div>
+      <!-- Item 2 -->
+
+      <div class="carousel-item active">
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="https://images.pexels.com/photos/173910/pexels-photo-173910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 brightness-50" alt="...">
+          <div class="carousel-caption mt-12">
+            <h1 class="text-4xl font-bold mb-1 shadow-2xl animate__animated animate__backInDown animate__delay-1s ">Bienvenidos</h1>
+            <p class="text-2xl shadow-2xl font-bold animate__animated animate__backInDown animate__delay-2s">AL SISTEMA
+              DE CONDUCE, ARRIBO Y DESPACHO DE EMBARCACIONES</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="https://images.pexels.com/photos/173910/pexels-photo-173910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div> -->
+
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="https://images.pexels.com/photos/194094/pexels-photo-194094.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="https://images.pexels.com/photos/3699183/pexels-photo-3699183.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="https://images.pexels.com/photos/8387647/pexels-photo-8387647.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+  </div>
+  <!-- Slider indicators -->
+  <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+      <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+</div>
+
+</div>
+
   <div class="container mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-28">
       <!-- lado izquierdo -->
@@ -74,8 +168,8 @@
         <span class="text-justify text-sm">La Armada de República Dominicana, con el objetivo de eficientizar los servicios de solicitudes de Conduce, Arribo y Despacho de Embarcaciones, a decidido poner en funcionamiento esta plataforma para que todos los propietarios de embarciones y/o navieras, puedan tener acceso a esta herramienta tecnologica, para que atraves de la misma formalicen en tiempo real sus solicitudes, acoorde a lo que establecen las normas y reglamentos de la Autoridad Maritima nacional.</span>
 <!-- botones -->
           <div class="mt-3">
-            <a type="button" class="btn outline outline-primario hover:bg-primario hover:text-white mx-2" href="#">Iniciar Sesión</a>
-            <a type="button" class="btn outline outline-primario bg-primario text-white mx-2 hover:bg-blue-600 hover:outline-blue-600 focus:bg-blue-900 active:bg-blue-900" href="#">Registrarse</a>
+            <a type="button" class="btn outline outline-primario hover:bg-primario hover:text-white mx-2 px-4" href="#">Iniciar Sesión</a>
+            <a type="button" class="btn outline outline-primario bg-primario text-white mx-2 hover:bg-blue-600 hover:outline-blue-600 focus:bg-blue-900 active:bg-blue-900 px-4" href="#">Registrarse</a>
           </div>
 <!-- fin de los botones -->
       </div>
@@ -85,14 +179,14 @@
       <!-- lado derecho -->
       <div class="flex justify-center items-center">
         <div class="">
-          <img class="rounded-full left" src="/img/hero.jpg" alt="Imagen de un barco">
+          <img class="rounded-full left" src="/img/hero1.jpg" alt="Imagen de un barco">
         </div>
       </div>
       <!-- fin del lado derecho del landing -->
     </div>
   </div>
 <div class="">
-  <div class="container flex justify-center items-center mt-10">
+  <div class="container flex justify-center items-center mt-10 mb-10">
     <a href="#section" class="animate__animated animate__bounce animate__infinite animate__slower"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
     </svg></a>
@@ -100,7 +194,7 @@
 </div>
 <!-- Nueva sección que aparece al hacer scroll -->
 
-<div class="scroll-section bg-blue-900" id="section">
+<section class="scroll-section bg-blue-900 -mt-1" id="section">
   <div class="container">
 
     <div class="container mx-auto">
@@ -118,8 +212,9 @@
   
         <!-- lado derecho -->
         <div class="flex justify-center items-center">
+          
           <p class="text-white">
-            Una embarcación de carga es un buque diseñado específicamente para el transporte de mercancías a través de vías marítimas. Estas embarcaciones son esenciales para el comercio internacional y nacional, permitiendo el traslado eficiente y seguro de diversos tipos de carga, incluyendo contenedores, graneles, y cargas especiales.
+            <strong>El despacho de buques</strong> es el procedimiento administrativo mediante el cual el Distrito Marítimo verifica que los buques y embarcaciones civiles, incluidas las de recreo, cumplen con los requisitos legales para realizar las navegaciones y tráficos que desean.
           </p>
 
 
@@ -144,7 +239,7 @@
       <div class="flex justify-center items-center">
         
         <p class="text-white">
-          Un barco de pesca es una embarcación diseñada y equipada específicamente para la captura de peces y otros recursos marinos. Estos barcos varían en tamaño y capacidad, desde pequeñas lanchas artesanales hasta grandes buques pesqueros industriales, cada uno adaptado a diferentes métodos de pesca y tipos de captura.
+         <strong>El despacho de embarcaciones</strong> es un procedimiento administrativo que verifica que los buques y embarcaciones cumplen con los requisitos legales para realizar navegaciones y tráficos específicos.
         </p>
 
 
@@ -166,7 +261,7 @@
 
 </div>
 
-</div>
+</section>
 
 
 
@@ -180,6 +275,7 @@
     </nav>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
