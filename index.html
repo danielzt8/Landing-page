@@ -67,26 +67,52 @@
       }
     }
 
+    .simbol {
+    display: block;
+    padding: 0.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    }
 
+    .division {
+    background-color: rgba(123, 98, 0, 0.2);
+    width: 90%;
+    height: 1px;
+    margin-bottom: 0.5rem;
+    }
+
+    .encabcont{
+      display: flex;
+    justify-content: space-between;
+}
+    
   </style>
 </head>
 
 <body>
   <!-- navbar -->
   <nav class="navbar bg-slate-100">
+<div class="simbol">
+  <img src="https://ogtic.gob.do/wp-content/themes/optic/img/rd.svg" alt="Escudo de la República Dominicana" class="mb-2 md:hidden h-10">
+<div class="division container md:hidden"></div>
+</div>
+<div class="simbol">
+  <img src="/img/capitania_web2 (1).png" alt="" class="md:hidden h-16" >
+</div>
+
     <div class="container-fluid d-flex justify-content-between align-items-center">
         <div class="d-flex align-items-center">
 
             <!-- <img src="/img/logo-1-1.png" alt="Logo 1" class="me-2"> -->
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand hidden md:block" href="#">
                 <img src="img/capitania_web2 (1).png" alt="Logo" width="300" height="24" class="d-inline-block align-text-top">
             </a>
         </div>
         <div>
         
         <div class="d-flex align-items-center size">
-          <img src="https://ogtic.gob.do/wp-content/themes/optic/img/rd.svg" alt="Escudo de la República Dominicana" class="mb-2"></div>
+          <img src="https://ogtic.gob.do/wp-content/themes/optic/img/rd.svg" alt="Escudo de la República Dominicana" class="mb-2 hidden md:block "></div>
             <select class="form-select border-amber-400 size hidden md:block" aria-label="Default select example">
                 <option selected>Selecciona el Idioma</option>
                 <option value="1">Inglés</option>
@@ -95,6 +121,7 @@
                 <option value="4">Ruso</option>
                 <option value="5">Alemán</option>
             </select>
+            <div class="w-full">
             <select class="form-select border-amber-400 size md:hidden" aria-label="Default select example">
               <option selected>Idioma</option>
               <option value="1">Inglés</option>
@@ -103,6 +130,7 @@
               <option value="4">Ruso</option>
               <option value="5">Alemán</option>
           </select>
+        </div>
         </div>
     </div>
 </nav>
