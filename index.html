@@ -60,7 +60,12 @@
       text-align: justify;
     }
 
-    
+    @media (max-width: 815px) {
+      .size {
+        width: 150px;
+        height: auto;
+      }
+    }
 
 
   </style>
@@ -78,15 +83,26 @@
                 <img src="img/capitania_web2 (1).png" alt="Logo" width="300" height="24" class="d-inline-block align-text-top">
             </a>
         </div>
-        <div class="d-flex align-items-center">
-            <select class="form-select border-amber-400" aria-label="Default select example">
-                <option selected>Selecciona el idioma</option>
+        <div>
+        
+        <div class="d-flex align-items-center size">
+          <img src="https://ogtic.gob.do/wp-content/themes/optic/img/rd.svg" alt="Escudo de la República Dominicana" class="mb-2"></div>
+            <select class="form-select border-amber-400 size hidden md:block" aria-label="Default select example">
+                <option selected>Selecciona el Idioma</option>
                 <option value="1">Inglés</option>
                 <option value="2">Español</option>
                 <option value="3">Francés</option>
                 <option value="4">Ruso</option>
                 <option value="5">Alemán</option>
             </select>
+            <select class="form-select border-amber-400 size md:hidden" aria-label="Default select example">
+              <option selected>Idioma</option>
+              <option value="1">Inglés</option>
+              <option value="2">Español</option>
+              <option value="3">Francés</option>
+              <option value="4">Ruso</option>
+              <option value="5">Alemán</option>
+          </select>
         </div>
     </div>
 </nav>
@@ -101,25 +117,26 @@
        <!-- Item 1 -->
        <div class="carousel-item active">
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/img/barcocontenedor.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/4 top-1/2 left-1/2 brightness-25" alt="...">
-          <div class="carousel-caption mt-20 ">
-
-            <!-- <h1 class="text-4xl font-bold mb-1 shadow-2xl animate__animated animate__backInDown animate__delay-1s ">Bienvenidos</h1> -->
-
-            <p class="text-xl md:text-3xl shadow-2xl font-bold animate__animated animate__backInDown animate__delay-2s">Avisos a los Navegantes</p>
-          </div>
+            <video autoplay muted loop class="absolute block w-full -translate-x-1/2 -translate-y-1/4 top-1/2 left-1/2 brightness-25">
+                <source src="/img/SaveInsta.App - 3403479681259595342.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="carousel-caption mt-20">
+                <p class="text-xl md:text-3xl font-bold animate__animated animate__backInDown animate__delay-2s">Avisos a los Navegantes</p>
+            </div>
         </div>
-      </div>
+    </div>
       <!-- Item 2 -->
 
       <div class="carousel-item active">
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img src="https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="absolute block w-full -translate-x-1/2 -translate-y-1/4 top-1/2 left-1/2" alt="...">
 
-          <div class="carousel-caption mt-12">
-            <!-- <h1 class="text-4xl font-bold mb-1 shadow-2xl animate__animated animate__backInDown animate__delay-1s ">Bienvenidos</h1>
-            <p class="text-2xl shadow-2xl font-bold animate__animated animate__backInDown animate__delay-2s">Aviso a los Navegantes</p> -->
-            
+          <div class="carousel-caption mt-20 ">
+
+            <!-- <h1 class="text-4xl font-bold mb-1 shadow-2xl animate__animated animate__backInDown animate__delay-1s ">Bienvenidos</h1> -->
+
+            <p class="text-xl md:text-3xl font-bold animate__animated animate__backInDown animate__delay-2s">Avisos a los Navegantes</p>
           </div>
         </div>
       </div>
@@ -275,6 +292,7 @@
 
 
 <section class="bg-blue-900">
+  <h1 class="text-center pt-3 font-bold text-white text-2xl" >Enlaces de Interes</h1>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 p-4 md:p-12 w-full p-4 mb-8">
     <div class="p-6 bg-gray-50 rounded-lg">
       <div class="flex justify-center">
@@ -363,6 +381,7 @@
     <nav class="navbar fixed-bottom bg-blue-900">
       <div class="container d-flex justify-content-center">
         <p class="text-center text-white font-thin mb-0">© 2024 SDCM - Comando Naval de Capitanias de Puerto y Autoridad Maritima (CDP)</p>
+        <img src="/img/bandera-de-la-republica-dominicana-imagen-animada-0001.gif" alt="" class="ml-2 h-4">
       </div>
     </nav>
   </footer>
