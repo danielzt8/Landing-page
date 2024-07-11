@@ -24,6 +24,12 @@
     }
   </script>
   <style>
+ @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+
     .circle{
       width: 300px; 
       height: 300px;;
@@ -132,7 +138,7 @@
         </div>
     </div>
     <select class="form-select border-amber-400 md:hidden w-full mx-4" aria-label="Default select example">
-      <option selected>Idioma</option>
+      <option selected>Selecciona el Idioma</option>
       <option value="1">Inglés</option>
       <option value="2">Español</option>
       <option value="3">Francés</option>
@@ -151,29 +157,28 @@
        <!-- Item 1 -->
        <div class="carousel-item active">
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <video autoplay muted loop class="absolute block w-full -translate-x-1/2 -translate-y-1/4 top-1/2 left-1/2 brightness-25">
+            <video autoplay muted loop class="absolute block w-full  brightness-25">
                 <source src="/img/SaveInsta.App - 3403479681259595342.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <div class="carousel-caption mt-20">
-                <p class="text-xl md:text-3xl font-bold animate__animated animate__backInDown animate__delay-2s">Avisos a los Navegantes</p>
+            <div class="carousel-caption mt-10">
+                <p class="text-sm md:text-3xl font-bold animate__animated animate__backInDown animate__delay-2s">Avisos a los Navegantes</p>
             </div>
         </div>
     </div>
       <!-- Item 2 -->
 
-      <div class="carousel-item active">
+      <!-- <div class="carousel-item active">
         <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="https://images.pexels.com/photos/813011/pexels-photo-813011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="absolute block w-full -translate-x-1/2 -translate-y-1/4 top-1/2 left-1/2" alt="...">
+          <img src="/img/habbid-1110x555.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
 
-          <div class="carousel-caption mt-20 ">
+          <div class="carousel-caption mt-10 ">
 
-            <!-- <h1 class="text-4xl font-bold mb-1 shadow-2xl animate__animated animate__backInDown animate__delay-1s ">Bienvenidos</h1> -->
 
-            <p class="text-xl md:text-3xl font-bold animate__animated animate__backInDown animate__delay-2s">Avisos a los Navegantes</p>
+            <p class="text-sm md:text-3xl font-bold animate__animated animate__backInDown animate__delay-2s">Avisos a los Navegantes</p>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- <div class="hidden duration-700 ease-in-out" data-carousel-item>
           <img src="https://images.pexels.com/photos/173910/pexels-photo-173910.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
@@ -181,11 +186,11 @@
 
       <!-- Item 3 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/img/Snapinsta.app_449291001_18313025422154174_7242614089454588248_n_1080.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-3/4 top-1/2 left-1/2" alt="...">
+          <img src="/img/Snapinsta.app_449291001_18313025422154174_7242614089454588248_n_1080.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
       </div>
       <!-- Item 4 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
-          <img src="/img/investigacion1-1040x520.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          <img src="/img/investigacion1-1040x520.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
       </div>
       <!-- Item 5 -->
       <div class="hidden duration-700 ease-in-out" data-carousel-item>
@@ -260,7 +265,7 @@
 
 <!-- Aqui sera el espacio para poner las dependencias de capitania de puerto -->
 
-<section class="scroll-section bg-gray-50 -mt-1" id="section">
+<section class="scroll-section bg-gray-50 -mt-1 hidden" id="section">
   <div class="container mx-auto">
 
     <!-- Primera parte -->
